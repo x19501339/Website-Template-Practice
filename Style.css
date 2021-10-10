@@ -1,0 +1,138 @@
+.main-container{
+    animation: transitions 0.75s;
+}
+
+@keyframes transitions{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.D1{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+.D2{
+    background-color: royalblue;
+    height: 150px;
+    width: 70%;
+    margin-left: 250px;
+    margin-right: auto;
+    margin-top: 5px;
+    
+}
+
+.containertext{
+    color: black;
+    margin-left: 70px;
+    background-image: linear-gradient(to right, white 50%,black 50%);
+    background-size: 200%;
+}
+
+.containertext:hover{
+    background-position: 100%;
+    color: white;
+}
+
+.slide-container{
+    width: 868px;
+    height: 365px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.image-container{
+    width: 2604px;
+    height: 365px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+
+.image-slider{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.button-container{
+    top: -20px;
+    position: relative;
+}
+
+.slider-button{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+#slider-image-1:target ~ .image-container{
+    left: 0px;
+}
+
+#slider-image-2:target ~ .image-container{
+    left: -868px;
+}
+
+#slider-image-3:target ~ .image-container{
+    left: -1736px;
+}
+
+.D3{
+    height: 350px;
+    width: 350px;
+    background-color: red;
+    margin-left: 40px;
+    position: absolute;
+}
+
+.D4{
+    height: 350px;
+    width: 350px;
+    background-color: blue;
+    margin-left: 150px;
+    margin-top: 150px;
+    position: absolute;
+}
+
+.D5{
+    height: 500px;
+    width: 2px;
+    background-color: gray;
+    margin: auto;
+}
+
+.D6{
+    height: 175px;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.D7{
+    height: 250px;
+    width: 500px;
+    background-color: lightgreen;
+    float: right;
+    position: relative;
+    bottom: 370px;
+    margin-right: 100px;
+}
